@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamaño_nombre_puppy">22dp</dimen>
+    <dimen name="largo_nombre_puppy">250dp</dimen>
+    <dimen name="margen_nombre_puppy">10dp</dimen>
+</resources>

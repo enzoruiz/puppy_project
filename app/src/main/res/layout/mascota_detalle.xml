@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.enzoruiz.puppyproject.MainActivity">
+    tools:context="com.enzoruiz.puppyproject.DetalleMascota">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvListaPuppies"
+        android:id="@+id/rvCincoUltimos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
