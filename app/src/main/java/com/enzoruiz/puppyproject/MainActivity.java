@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, DetalleMascota.class);
                 startActivity(intent);
                 break;
+            default:
+                break;
         }
 
         return super.onOptionsItemSelected(item);
