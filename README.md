@@ -42,7 +42,7 @@ Practicando Android
 </td>
 </tr>
 <tr>
-<td colspan="2">
+<td>
 <a href="http://es.tinypic.com?ref=15wh1mg" target="_blank"><img src="http://i67.tinypic.com/15wh1mg.png" border="0" alt="Image and video hosting by TinyPic"></a>
 </td>
 </tr>
