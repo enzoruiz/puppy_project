@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import com.enzoruiz.puppyproject.adaptadores.PuppyAdapter;
 import com.enzoruiz.puppyproject.pojos.Puppy;
@@ -19,6 +20,12 @@ public class DetalleMascota extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mascota_detalle);
+
+        // PARA QUE APAREZCA EL BOTON ATRAS EN EL TOOLBAR
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         rvCincoUltimos = (RecyclerView) findViewById(R.id.rvCincoUltimos);
 

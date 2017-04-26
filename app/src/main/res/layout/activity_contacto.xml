@@ -8,6 +8,9 @@
     tools:context="com.enzoruiz.puppyproject.ContactoActivity"
     android:orientation="vertical">
 
+    <include layout="@layout/actionbar"
+        android:id="@+id/toolbar"/>
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
