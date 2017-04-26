@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">PuppyProject</string>
     <string name="default_nombreMascota">Puppy Puppy</string>
+    <string name="default_contacto">Contacto</string>
+    <string name="default_acercade">Acerca de</string>
     <string name="default_cantidad_likes">10</string>
+    <string name="default_nombre">Nombre</string>
+    <string name="default_email">Email</string>
+    <string name="default_mensaje">Mensaje</string>
+    <string name="default_enviarComentario">Enviar Comentario</string>
+    <string name="default_nombreDeveloper">Enzo Ruiz Pelaez</string>
+    <string name="default_especialidadDeveloper">Backend Developer</string>
+    <string name="default_emailDeveloper">enzo.rp.90@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

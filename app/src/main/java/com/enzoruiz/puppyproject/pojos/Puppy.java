@@ -1,4 +1,4 @@
-package com.enzoruiz.puppyproject;
+package com.enzoruiz.puppyproject.pojos;
 
 /**
  * Created by Enzo on 24/04/2017.

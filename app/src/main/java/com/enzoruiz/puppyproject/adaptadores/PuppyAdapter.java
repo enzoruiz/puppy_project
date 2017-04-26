@@ -1,4 +1,4 @@
-package com.enzoruiz.puppyproject;
+package com.enzoruiz.puppyproject.adaptadores;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.enzoruiz.puppyproject.R;
+import com.enzoruiz.puppyproject.pojos.Puppy;
 
 import java.util.ArrayList;
 

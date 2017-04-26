@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.enzoruiz.puppyproject.adaptadores.PuppyAdapter;
+import com.enzoruiz.puppyproject.pojos.Puppy;
+
 import java.util.ArrayList;
 
 public class DetalleMascota extends AppCompatActivity {
