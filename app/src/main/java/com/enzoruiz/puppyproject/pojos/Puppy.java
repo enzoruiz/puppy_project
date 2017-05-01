@@ -6,13 +6,26 @@ package com.enzoruiz.puppyproject.pojos;
 
 public class Puppy {
 
-    private String nombre;
-    private int foto, cantidadLikes;
+    private String nombre, fecha;
+    private int id, foto, cantidadLikes;
+
+    public Puppy(){
+
+    }
 
     public Puppy(String nombre, int foto, int cantidadLikes){
         this.nombre = nombre;
         this.foto = foto;
         this.cantidadLikes = cantidadLikes;
+        this.fecha = "";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -37,5 +50,13 @@ public class Puppy {
 
     public void setCantidadLikes(int cantidadLikes) {
         this.cantidadLikes = cantidadLikes;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 }

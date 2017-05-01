@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.enzoruiz.puppyproject.R;
-import com.enzoruiz.puppyproject.adaptadores.PuppyAdapter;
 import com.enzoruiz.puppyproject.adaptadores.PuppyHistorialAdapter;
 import com.enzoruiz.puppyproject.pojos.Puppy;
 

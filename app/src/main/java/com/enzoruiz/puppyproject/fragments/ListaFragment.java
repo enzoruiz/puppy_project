@@ -12,16 +12,19 @@ import android.view.ViewGroup;
 import com.enzoruiz.puppyproject.R;
 import com.enzoruiz.puppyproject.adaptadores.PuppyAdapter;
 import com.enzoruiz.puppyproject.pojos.Puppy;
+import com.enzoruiz.puppyproject.presentador.IListaFragmentPresenter;
+import com.enzoruiz.puppyproject.presentador.ListaFragmentPresenter;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ListaFragment extends Fragment {
+public class ListaFragment extends Fragment implements IListaFragmentView {
 
     private RecyclerView rvListaPuppies;
     private ArrayList<Puppy> lista_puppies;
+    private IListaFragmentPresenter iListaFragmentPresenter;
 
     public ListaFragment() {
         // Required empty public constructor
@@ -34,26 +37,26 @@ public class ListaFragment extends Fragment {
 
         rvListaPuppies = (RecyclerView) v.findViewById(R.id.rvListaPuppies);
 
-        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
-
-        rvListaPuppies.setLayoutManager(llm);
-
-        inicializarLista();
-        inicializarAdaptador();
+        iListaFragmentPresenter = new ListaFragmentPresenter(this, getContext());
 
         return v;
     }
 
-    public void inicializarLista(){
-        lista_puppies = new ArrayList<>();
-        lista_puppies.add(new Puppy("Pepe", R.drawable.dog_face, 2));
-        lista_puppies.add(new Puppy("Douglas", R.drawable.dog_face, 3));
-        lista_puppies.add(new Puppy("Ghost", R.drawable.dog_face, 4));
+    @Override
+    public void generarLinearLayoutManager() {
+        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        rvListaPuppies.setLayoutManager(llm);
     }
 
-    public void inicializarAdaptador(){
-        PuppyAdapter puppyAdapter = new PuppyAdapter(lista_puppies);
+    @Override
+    public PuppyAdapter crearAdaptador(ArrayList<Puppy> lista_puppies) {
+        PuppyAdapter puppyAdapter = new PuppyAdapter(lista_puppies, getActivity());
+        return puppyAdapter;
+    }
+
+    @Override
+    public void inicializarAdaptadorRecyclerView(PuppyAdapter puppyAdapter) {
         rvListaPuppies.setAdapter(puppyAdapter);
     }
 }

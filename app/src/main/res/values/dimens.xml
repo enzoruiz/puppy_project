@@ -4,6 +4,7 @@
     <dimen name="largo_nombre_puppy">250dp</dimen>
     <dimen name="margen_nombre_puppy">10dp</dimen>
     <dimen name="tamaño_foto">150dp</dimen>
+    <dimen name="altura_cardview">220dp</dimen>
     <dimen name="tamaño_letra_acercade">20dp</dimen>
     <dimen name="default_margen">10dp</dimen>
     <dimen name="default_grosor">2dp</dimen>

@@ -6,18 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TableLayout;
 
 import com.enzoruiz.puppyproject.adaptadores.PageAdapter;
-import com.enzoruiz.puppyproject.adaptadores.PuppyAdapter;
 import com.enzoruiz.puppyproject.fragments.ListaFragment;
 import com.enzoruiz.puppyproject.fragments.PerfilFragment;
-import com.enzoruiz.puppyproject.pojos.Puppy;
 
 import java.util.ArrayList;
 

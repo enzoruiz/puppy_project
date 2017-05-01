@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.enzoruiz.puppyproject.adaptadores.PuppyAdapter;
+import com.enzoruiz.puppyproject.db.ConstructorPuppy;
 import com.enzoruiz.puppyproject.pojos.Puppy;
 
 import java.util.ArrayList;
@@ -40,13 +41,12 @@ public class DetalleMascota extends AppCompatActivity {
 
     public void inicializarLista(){
         lista_puppies = new ArrayList<>();
-        lista_puppies.add(new Puppy("Pepe", R.drawable.dog_face, 2));
-        lista_puppies.add(new Puppy("Douglas", R.drawable.dog_face, 3));
-        lista_puppies.add(new Puppy("Ghost", R.drawable.dog_face, 4));
+        ConstructorPuppy constructorPuppy = new ConstructorPuppy(this);
+        lista_puppies = constructorPuppy.obtenerCincoUltimos();
     }
 
     public void inicializarAdaptador(){
-        PuppyAdapter puppyAdapter = new PuppyAdapter(lista_puppies);
+        PuppyAdapter puppyAdapter = new PuppyAdapter(lista_puppies, this);
         rvCincoUltimos.setAdapter(puppyAdapter);
     }
 
